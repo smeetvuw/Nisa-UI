@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Basic Page Needs
+			–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<meta charset="utf-8">
+	<title>Nisa Subcription Project</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<!-- Mobile Specific Metas
+			–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+	 crossorigin="anonymous">
+	<!-- Favicon
+			–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<!-- <link rel="icon" type="image/png" href="images/DB.png"> -->
+</head>
+
+<body>
+	<div class="nav1" id="mynav1">
+		<!--Adding My logo to the left and always showing -->
+		<a href="index.html" style="font-size:35px;">Nisa
+			<!-- <img src="images/dimmulogo.png" height="40"> -->
+		</a>
+		<!--Floating to the Left Side of the menu, the other pages-->
+		<a href="submit.php">Subcribe</a>
+		<!--Shows menubutton when screen is small -->
+		<a href="javascript:void(0);" style="font-size:15px;" class="menubutton" onclick="myFunction()">&#9776;</a>
+	</div>
+	<br>
+	<!-- Primary Page Layout
+			–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<div class="sticky">
+		<!-- <div class="sticky"> -->
+		<table style="text-align:center;">
+			<tr>
+				<td width="5%"><button class="btn" style="border-radius: 15%;color: gray" id="Back"><B>&lt;</B></button></td>
+				<td width="90%">
+					<ul id="progress-bar" class="progressbar">
+						<li class="active"></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</td>
+				<td width="5%"><button class="btn" id="Reset" style="border-radius: 50%;color: gray"><b>X</b></button></td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<div class="cen" style="color: #E55F42">Your subcription: <span id="totalPrice"></span></div>
+				</td>
+			</tr>
+			<!-- <Td class="sideProgress"><a href="#google"><button class="btn" onclick="change()" id="Next">&gt;</button></a></td> -->
+		</table>
+	</div>
+	<br><br>
+	<!-- </div> -->
+	<div class="cenwrap1" id="subtype">
+		<h1 style="text-align: center; color: #707070;font-family: 'Futura', sans-serif;">PICK YOUR SERVICE
+
+		</h1>
+		<div class="row3">
+			<div class="column3 leftcol" id="monthly" onclick="monthly()">
+				<div class="cenelements">
+					<h2>Monthly</h2>
+					<h2><sup>$</sup>24 <span class="insidecol">per month</span></h2>
+					<br>
+					<p class="insidecol1">Product details</p>
+					<hr>
+					<p class="insidecol"> Minimum period 6 months </p>
+					<hr>
+				</div>
+			</div>
+			<div class="column3" style="margin: 1%" id="bimonthly" onclick="bimonthly()">
+				<div class="cenelements">
+					<h2>Bi-Monthly</h2>
+					<h2><sup>$</sup>26 <span class="insidecol">per month</span></h2>
+					<br>
+					<p class="insidecol1">Product details</p>
+					<hr>
+					<p class="insidecol"> Minimum period 12 months </p>
+					<hr>
+				</div>
+			</div>
+			<div class="column3 rigcol" id="quarterly" onclick="quarterly()">
+				<div class="cenelements">
+					<h2>3 Monthly</h2>
+					<h2><sup>$</sup>28 <span class="insidecol">per month</span></h2>
+					<br>
+					<p class="insidecol1">Product details</p>
+					<hr>
+					<p class="insidecol"> Cancel Anytime </p>
+					<hr>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="cenwrap1" id="pickCut" style="display: none">
+		<h1 style="text-align: center; color: #707070;font-family: 'Futura', sans-serif;">PICK ONE OR MORE…</h1>
+		<div class="row3">
+			<div class="column3 leftcol long1" id="SABRINA" onclick="SABRINA()">
+				<div class="cenelements">
+					<h2>SABRINA</h2>
+					<p>High Full Brief</p>
+					<img src="images/uw1.PNG" height="100">
+					<p class="insidecol1">Sabrina is your wise aunty that always told you that high- waisted full-coverage knickers
+						were the best! Comfort guaranteed.</p>
+					<hr>
+					<p class="insidecol"> Fabric: 95% organic cotton, 5% elastane for stretch. </p>
+					<hr>
+				</div>
+			</div>
+			<div class="column3 leftcol long1" id="QUINN" onclick="QUINN()">
+				<div class="cenelements">
+					<h2>QUINN</h2>
+					<p>Low Full Brief</p>
+					<img src="images/uw2.PNG" height="100">
+					<p class="insidecol1">Quinn is our best-seller, with a low waist and full coverage across the back. Stunning on
+						all figures.</p>
+					<hr>
+					<p class="insidecol"> Fabric: 95% organic cotton, 5% elastane for stretch. </p>
+					<hr>
+				</div>
+			</div>
+			<div class="column3 leftcol long1" id="ADA" onclick="ADA()">
+				<div class="cenelements">
+					<h2>ADA</h2>
+					<p>Low Cheeky Brief</p>
+					<img src="images/uw3.PNG" height="100">
+					<p class="insidecol1">Ada is named after trial-blazing mathematician Ada Lovelace. Ada is a low-waisted, with a
+						cheeky bum.</p>
+					<hr>
+					<p class="insidecol"> Fabric: 95% organic cotton, 5% elastane for stretch. </p>
+					<hr>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="containerWork" id="sizecontent" style="display: none">
+		<h1>SELECT YOUR SIZE</h1>
+		<div class="parent parent2">
+			<div class="child">
+				<div class="wrapper">
+					<div class="colsize" id="small" onclick="small()">
+						<div class="cenelements">
+							<h1>S</h1>
+							<p>Size S = Size 10<br> Waist 70cm & Hip 95cm</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="child">
+				<div class="wrapper">
+					<div class="colsize" id="medium" onclick="medium()">
+						<div class="cenelements">
+							<h1>M</h1>
+							<p>Size M = Size 12 <br>Waist 75cm & Hip 100cm</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="child">
+				<div class="wrapper">
+					<div class="colsize" id="large" onclick="large()">
+						<div class="cenelements">
+							<h1>L</h1>
+							<p>Size L = Size 14 <br>Waist 80cm & Hip 105cm</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="child">
+				<div class="wrapper">
+					<div class="colsize" id="xl" onclick="xl()">
+						<div class="cenelements">
+							<h1>XL</h1>
+							<p>Size XL = Size 16 <br>Waist 85cm & Hip 110cm</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="child">
+				<div class="wrapper">
+					<div class="colsize" id="xxl" onclick="xxl()">
+						<div class="cenelements">
+							<h1>XXL</h1>
+							<p>Size XXL = Size 16<br> Waist 90cm & Hip 115cm</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- <div class="containerWork" id="sizecontent"> -->
+	<div class="cenwrap1" style="display: none">
+		<h1 style="text-align: center">SELECT YOUR SIZE</h1>
+		<!-- <div class="parent parent2"> -->
+		<div class="wrapper">
+			<div class="colsize" id="small" onclick="small()">
+				<div class="cenelements">
+					<h1>LIKE</h1>
+					<div class="color"></div>
+				</div>
+			</div>
+			<br>
+			<div style="text-align:center">
+					<span class="dot" style="background-color: black"></span>
+					<span class="dot" style="background-color: khaki"></span>
+					<span class="dot" style="background-color: navy"></span>
+					<span class="dot" style="background-color: silver"></span>
+					<span class="dot" style="background-color: plum"></span>
+					<span class="dot" style="background-color: firebrick"></span>
+				  </div>	
+		</div>
+
+
+		<!-- <div class="child">
+				<div class="wrapper">
+					<div class="colsize" id="small" onclick="small()">
+						<div class="cenelements">
+							<h1>DISLIKE</h1>
+						</div>
+					</div>
+				</div>
+			</div> -->
+	</div>
+<div class="container">
+<div><img src="images/DB.png"/></div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+</div>
+	<!-- 
+
+	<div class="cenwrap1" id="pickCut" style="display: ">
+		<h1 style="text-align: center; color: #707070;font-family: 'Futura', sans-serif;">SELECT YOUR COLOURS</h1>
+		<div class="row3">
+			<div class="column2">
+				<h2>Column 1</h2>
+				<p>Some text..</p>
+			</div><br>
+			<div class="column2">
+				<h2>Column 2</h2>
+				<p>Some text..</p>
+			</div>
+		</div>
+	</div> -->
+
+	<!-- <div class="btn-container">
+		<button class="btn" id="Next">Next</button>
+		<button class="btn" id="Back">Back</button>
+		<button class="btn" id="Reset">Reset</button>
+	</div> -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<!-- <script src='javascript/bootstrap.min.js'></script> -->
+	<script src='javascript/jquery.min.js'></script>
+	<script src="javascript/script.js"></script>
+</body>
+
+</html>
