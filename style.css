@@ -1,0 +1,613 @@
+/* General Tag styling */
+body {
+    margin: 0;
+    font-family: 'Futura', sans-serif;
+    color: #707070;
+}
+
+p,
+h1,
+h3,
+h2,
+h5,
+h6 {
+    color: #707070;
+}
+
+h4 {
+    color: #EDAB4F;
+}
+
+h4,
+h1 {
+    text-align: center;
+}
+
+/* Promotion line */
+.topheader {
+    background-color: #FFDAB4;
+    text-align: center;
+    color: white;
+    top: 0;
+    padding: 10px;
+    margin: 0;
+}
+
+/* footer code */
+footer {
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px 0px;
+    text-align: center;
+    height: 50px;
+    right: 0;
+    bottom: 0;
+    /* background-color: deepskyblue; */
+    left: 0;
+}
+
+/* links of the footer */
+footer a {
+    color: #707070;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 0px 5%;
+    border-right: 1px solid white;
+    transition: all .5s ease;
+
+}
+
+footer a:first-child {
+    /* adding the 1px line to the left for 1st element */
+    border-left: 1px solid white;
+}
+
+/* for the links in footer on hover */
+footer a:hover {
+    color: #FBD8B6;
+    opacity: .8;
+}
+
+
+/* full width banner with text on top */
+.bannerContainer {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.responsiveImg {
+    width: 100%;
+    height: auto;
+    opacity: 0.85;
+    position: 0;
+    min-height: 260px;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: calc(2vw + 14px);
+    color: white;
+    text-align: center;
+}
+
+/* landing page illusation icon cnetering and sizing */
+.icon {
+    display: block;
+    width: 60%;
+    height: 60%;
+    max-width: 240px;
+    max-height: 240px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Button on top of image */
+button {
+    color: white;
+    border: 2px solid white;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: transparent;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: calc(2vw + 12px);
+}
+
+.btn {
+    background-color: #FBD8B6;
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    color: white;
+}
+
+.btn:hover {
+    color: white;
+}
+
+.btn1 {
+    background-color: #FBD8B6;
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+
+}
+
+.btn1:hover {
+    color: white;
+}
+
+.btn:focus {
+    color: white;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.btnSub {
+    /* background-color: red; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: crimson;
+    border-color: crimson;
+    font-size: 3vw;
+    margin: 5px;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    /* width: 50%; */
+    /* color: white; */
+}
+
+button:hover {
+    background-color: #FFDAB4;
+}
+
+.colourbtn{
+    background-color: #FFDAB4;
+}
+
+.colourbtn:hover{
+    background-color: white;
+    border: 2px solid #FFDAB4;
+    color: #FBD8B6;
+}
+
+/* My 3 grip responsive design  */
+.wrapper {
+    margin: auto;
+    max-width: 400px;
+}
+
+.parent {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 0.5rem 0 -0.5rem;
+}
+
+.child {
+    flex: 1 0 20%;
+    min-width: 350px;
+}
+
+.parent2 .child {
+    flex: 1 0 25%;
+}
+
+.containerWork {
+    margin: 1.5em auto;
+    left: 2%;
+    max-width: 1200px;
+}
+
+.wrapcen {
+    width: 80%;
+    max-width: 1200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* less than 33% but more than or equal to 25%*/
+.containerWork {
+    margin: 1.5em auto;
+    max-width: 1200px;
+}
+
+.clickdiv{
+    padding: 3%;
+    border-radius: 10px;
+    margin:3%;
+    background-color: #FBD8B6;
+}
+
+/* 3 col design */
+/* Create three equal columns that floats next to each other */
+.column3,
+.col3 {
+    float: left;
+    width: calc(18% + 6.4vw);
+    padding: 0 15px;
+    border-radius: 10px;
+    /* margin:.5%; */
+    background-color: #FBD8B6;
+    /* height: 260px; */
+    /* Should be removed. Only for demonstration */
+}
+
+.col3 {
+    background-color: transparent;
+    /* height: 340px; */
+}
+
+.row3:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.colsize {
+    width: 90%;
+    position: relative;
+    padding: 15px;
+    border-radius: 10px;
+    /* max-width: 300px; */
+    /* margin:.5%; */
+    /* color: transparent; */
+    border: 4px solid #FBD8B6;
+    background-color: #FBD8B6;
+
+    height: 140px;
+    /* Should be removed. Only for demonstration */
+}
+
+.topright {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+  }
+
+/* Clear floats after the columns */
+.row3:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.con600 {
+    max-width: 700px;
+    margin: auto;
+}
+
+.cenwrap1 {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.cenelements {
+    text-align: center;
+}
+
+.column2 {
+    float: left;
+    width: 40%;
+    padding: 15px;
+    height: 140px;
+    /* Should be removed. Only for demonstration */
+}
+
+/* index page code */
+#howitworks{
+    display: block;
+}
+
+#howitworksmini{
+    display: none;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    #howitworks{
+        display: none;
+    }
+
+    #howitworksmini{
+        display: block;
+    }
+
+    .column3,
+    .col3 {
+        margin: 1%;
+        width: calc(90% + 1.6vw);
+    }
+
+    .colsize {
+        margin: 1%;
+        width: calc(90% + 1.6vw);
+        /* Should be removed. Only for demonstration */
+    }
+
+    .column2 {
+        margin: 1%;
+        width: calc(90% + 1.6vw);
+    }
+}
+
+/* Sticky */
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    border-radius: 15px;
+    max-width: 1200px;
+    margin: auto;
+    background: rgba(252, 252, 252, 0.8);
+}
+
+/* =============== NAV BAR CODE ===============*/
+
+.nav1 {
+    overflow: hidden;
+    /* background-color: rgba(255, 0, 0, 0.6); */
+}
+
+/* The nav bar ================================ */
+.nav1 a:not(:first-child) {
+    float: right;
+    padding: 18px 23px;
+
+}
+
+.containerWork {
+    margin: 1.5em auto;
+    max-width: 1200px;
+}
+
+/* Styling Nav bar text */
+.nav1 a {
+    float: left;
+    display: block;
+    color: #707070;
+    background-color: white;
+    text-align: center;
+    padding: 9.5px 31px;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: Open Sans; 
+    font-weight: 300;
+}
+
+/* text black and background light gray*/
+.nav1 a:hover {
+    background-color: #ddd;
+    color: crimson;
+}
+
+/* menubutton hidden default */
+.nav1 .menubutton {
+    display: none;
+}
+
+.mobile{
+    display: block;
+}
+/* responsive design menu, just another way make this work on different screen sizes */
+@media screen and (max-width: 760px) {
+
+    .mobile{
+        display: none;
+    }
+
+    .nav1 a:not(:first-child) {
+        display: none;
+    }
+
+    .nav1 a.menubutton {
+        float: right;
+        display: block;
+    }
+}
+
+/* when the width of window is less than 600px (responsive menu) */
+@media screen and (max-width: 760px) {
+    .nav1.responsive {
+        position: relative;
+    }
+
+    /* Styling Nav bar text */
+    .nav1 a {
+        float: left;
+        display: block;
+        color: crimson;
+        background-color: white;
+        text-align: center;
+        padding: 6px 31px;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    .nav1.responsive .menubutton {
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 40px;
+    }
+
+    .nav1.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+/* ------------ NAV BAR CODE ENDS ------------ */
+
+
+/* ------------ Table ------------ */
+
+table {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border-radius: 10px;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+
+td {
+    text-align: center;
+    font-size: 1.2em;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 1px solid black; */
+}
+
+.cen {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Hov:hover {
+    background-color: rgba(255, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+noHov:hover {
+    display: none;
+}
+
+.sideProgress {
+    width: 10%;
+    margin: auto;
+    align-content: center;
+}
+
+th {
+    text-align: center;
+}
+
+.totalrow {
+    float: left;
+    margin-left: 6%;
+    font-size: calc(8px + 1.5vw);
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ff8800;
+}
+
+/* step progress bar design */
+.progressbar {
+    margin: 20px 0 20px 0;
+    counter-reset: step;
+}
+
+.progressbar li {
+    list-style-type: none;
+    width: 25%;
+    float: left;
+    font-size: 12px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FBD8B6;
+}
+
+.progressbar li:before {
+    width: 15px;
+    height: 15px;
+    content: '';
+    /* line-height: 30px; */
+    border: 4px solid #FBD8B6;
+    background-color: white;
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    border-radius: 50%;
+    transition: all .8s;
+}
+
+.progressbar li:after {
+    width: 100%;
+    height: 4px;
+    content: '';
+    position: absolute;
+    background-color: #FBD8B6;
+    top: 9px;
+    left: -50%;
+    z-index: -1;
+    transition: all .8s;
+}
+
+.progressbar li:first-child:after {
+    content: none;
+}
+
+.progressbar li.active:before {
+    border-color: #FBD8B6;
+    background-color: #E55F42;
+    /* background-color: #b6d9fb; */
+    color: white;
+    /* top: -50px; */
+    /* font-family: "Font Awesome 5 Free";
+    content: "\f058"; */
+    transition: all .8s;
+}
+
+.progressbar li.active:after {
+    background-color: #FBD8B6;
+    transition: all .8s;
+}
+
+
+
+/* input[type=submit] {
+    width: 100%;
+    background-color: red;
+    color: white;
+    font-size: 2vw;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+} */
+
+
+.cenBanner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 10px;
+}
+
+.container {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-template-rows: repeat(2, 100px);
+}
+
+.container>div>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
